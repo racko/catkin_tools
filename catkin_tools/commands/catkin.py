@@ -34,6 +34,8 @@ from catkin_tools.terminal_color import fmt
 from catkin_tools.terminal_color import set_color
 from catkin_tools.terminal_color import test_colors
 
+from catkin_tools.version import version
+
 CATKIN_COMMAND_VERB_GROUP = 'catkin_tools.commands.catkin.verbs'
 
 
@@ -191,7 +193,7 @@ def catkin_main(sysargs):
     # Check for version
     if '--version' in sysargs:
         print('catkin_tools {} (C) 2014-{} Open Source Robotics Foundation'.format(
-            pkg_resources.get_distribution('catkin_tools').version,
+            version,
             date.today().year)
         )
         print('catkin_tools is released under the Apache License,'

@@ -9,6 +9,8 @@ from setuptools import find_packages
 from setuptools import setup
 from setuptools.command.install import install
 
+from catkin_tools.version import version
+
 # Setup installation dependencies
 install_requires = [
     'catkin-pkg > 0.2.9',
